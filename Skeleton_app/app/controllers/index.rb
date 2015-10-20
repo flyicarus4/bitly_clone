@@ -1,5 +1,5 @@
 get '/' do
-	
+	@listing = Url.all
 	erb :index
 end
 
