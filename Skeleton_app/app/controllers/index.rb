@@ -10,6 +10,8 @@ post '/urls' do
 	redirect '/'
 end
 
-get '/:short_url' do
+post '/:short_url' do
+	Url.add_count(params[:short])
 
+	redirect '/'
 end
